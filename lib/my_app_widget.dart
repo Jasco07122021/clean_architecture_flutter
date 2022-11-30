@@ -1,3 +1,4 @@
+import 'package:clean_architecture_flutter/app.dart';
 import 'package:flutter/material.dart';
 
 class MyApp extends StatelessWidget {
@@ -12,6 +13,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       builder: materialAppBuilder,
+      theme: ThemeData(
+        scaffoldBackgroundColor: Colors.black,
+        appBarTheme: const AppBarTheme(
+          color: Colors.transparent,
+        ),
+      ),
     );
   }
 }

@@ -18,7 +18,7 @@ dependencies:
   cupertino_icons: ^1.0.5
 
   feature_home:
-    path: app/feature/lib/feature_home
+    path: app/features/feature_home
 
 
 

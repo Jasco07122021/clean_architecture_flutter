@@ -1,6 +1,4 @@
-library feature_home;
-
-export 'views/home_view.dart';
+library feature_login;
 
 /// A Calculator.
 class Calculator {
