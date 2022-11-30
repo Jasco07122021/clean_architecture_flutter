@@ -15,14 +15,27 @@ dependencies:
   flutter:
     sdk: flutter
 
-
   cupertino_icons: ^1.0.5
+
+  feature_home:
+    path: app/feature/lib/feature_home
+
+
+
+
+
+  injectable: ^1.5.3
+  get_it: ^7.2.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  flutter_lints: ^2.0.1
+  lint: ^1.10.0
+
+  flutter_flavorizr: ^2.1.5
+  injectable_generator: ^1.5.5
+  build_runner: ^2.3.2
 
 
 flutter:
@@ -45,3 +58,24 @@ flutter:
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic
 
+
+flavorizr:
+  app:
+    android:
+      flavorDimensions: "flavor-type"
+    ios:
+  flavors:
+    prod:
+      app:
+        name: "Clean.Architecture.prod"
+      android:
+        applicationId: "com.example.clean_architecture_flutter.prod"
+      ios:
+        bundleId: "com.example.clean_architecture_flutter.prod"
+    mock:
+      app:
+        name: "Clean.Architecture.mock"
+      android:
+        applicationId: "com.example.clean_architecture_flutter.mock"
+      ios:
+        bundleId: "com.example.clean_architecture_flutter.mock"
