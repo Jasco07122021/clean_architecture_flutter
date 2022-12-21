@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       builder: materialAppBuilder,
       theme: ThemeData(
+        brightness: Brightness.dark,
         scaffoldBackgroundColor: Colors.black,
         appBarTheme: const AppBarTheme(
           color: Colors.transparent,
